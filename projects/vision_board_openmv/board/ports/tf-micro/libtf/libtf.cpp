@@ -12,7 +12,7 @@
 
 #include "libtf.h"
 
-#define LIBTF_MAX_OPS 34
+#define LIBTF_MAX_OPS 127
 
 extern "C" {
 
@@ -80,7 +80,7 @@ extern "C" {
         // resolver.AddBatchToSpaceNd();
         // resolver.AddCallOnce();
         // resolver.AddCeil();
-        // resolver.AddConcatenation();
+        resolver.AddConcatenation();
         resolver.AddConv2D();
         // resolver.AddCos();
         // resolver.AddCumSum();
@@ -144,7 +144,7 @@ extern "C" {
         resolver.AddSub();
         // resolver.AddSvdf();
         resolver.AddTanh();
-        // resolver.AddTranspose();
+        resolver.AddTranspose();
         resolver.AddTransposeConv();
         resolver.AddUnpack();
         // resolver.AddVarHandle();
